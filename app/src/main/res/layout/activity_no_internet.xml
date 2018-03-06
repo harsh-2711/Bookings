@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/alert_sign"
+        android:src="@drawable/alert"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/not_available"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internet not available"
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:id="@+id/not_available"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try turning on Cellular data or WiFi"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/not_available"
+        android:layout_marginTop="25dp"
+        android:paddingRight="30dp"/>
+
+</RelativeLayout>
